@@ -1,0 +1,16 @@
+#version 330 core
+out vec4 FragColor;
+
+in vec2 TexCoord;
+in float alpha;
+// texture samplers
+uniform sampler2D textureContainer;
+uniform sampler2D textureAwesomeface;
+
+void main()
+{
+  vec4 color1 = texture(textureContainer, TexCoord);
+    vec4 color2 = texture(textureAwesomeface, TexCoord);
+
+    FragColor = mix(color1, color2, alpha);
+}
