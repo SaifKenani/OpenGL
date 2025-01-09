@@ -14,7 +14,6 @@ add_executable(OpenGL_Project src/main.cpp
         src/VBO.cpp
         src/VAO.cpp
         src/Texture.cpp
-        src/shaderClass.cpp
         src/stb.cpp
         lib/DrawableObject.h
         lib/Building.h
