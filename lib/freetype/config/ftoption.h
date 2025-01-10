@@ -219,7 +219,7 @@ FT_BEGIN_HEADER
    *   Do not `#undef` this macro here since the build system might define
    *   it for certain configurations only.
    *
-   *   If you use a build system like cmake or the `configure` script,
+   *   If you use a build system like cmakeSaif or the `configure` script,
    *   options set by those programs have precedence, overwriting the value
    *   here with the configured one.
    */
@@ -239,7 +239,7 @@ FT_BEGIN_HEADER
    *
    *   Define this macro if you want to enable this 'feature'.
    *
-   *   If you use a build system like cmake or the `configure` script,
+   *   If you use a build system like cmakeSaif or the `configure` script,
    *   options set by those programs have precedence, overwriting the value
    *   here with the configured one.
    */
@@ -268,7 +268,7 @@ FT_BEGIN_HEADER
    *
    *   Define this macro if you want to enable this 'feature'.
    *
-   *   If you use a build system like cmake or the `configure` script,
+   *   If you use a build system like cmakeSaif or the `configure` script,
    *   options set by those programs have precedence, overwriting the value
    *   here with the configured one.
    */
@@ -285,7 +285,7 @@ FT_BEGIN_HEADER
    *
    *   Define this macro if you want to enable this 'feature'.
    *
-   *   If you use a build system like cmake or the `configure` script,
+   *   If you use a build system like cmakeSaif or the `configure` script,
    *   options set by those programs have precedence, overwriting the value
    *   here with the configured one.
    */
@@ -301,7 +301,7 @@ FT_BEGIN_HEADER
    *
    *   Define this macro if you want to enable this 'feature'.
    *
-   *   If you use a build system like cmake or the `configure` script,
+   *   If you use a build system like cmakeSaif or the `configure` script,
    *   options set by those programs have precedence, overwriting the value
    *   here with the configured one.
    */

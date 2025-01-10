@@ -1,16 +1,27 @@
 /opt/clion-2024.2.3/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/clion-2024.2.3/bin/ninja/linux/x64/ninja -G Ninja -S /home/saif/Desktop/OpenGL_Project -B /home/saif/Desktop/OpenGL_Project/cmake-build-debug
--- The C compiler identification is GNU 13.2.0
--- The CXX compiler identification is GNU 13.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done (0.6s)
--- Generating done (0.0s)
--- Build files have been written to: /home/saif/Desktop/OpenGL_Project/cmake-build-debug
+[0/8] Performing download step (git clone) for 'glfw-populate'
+Cloning into 'glfw-src'...
+error: RPC failed; curl 56 Recv failure: Connection reset by peer
+error: 3246 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+-- Had to git clone more than once: 3 times.
+CMake Error at glfw-subbuild/glfw-populate-prefix/tmp/glfw-populate-gitclone.cmake:39 (message):
+  Failed to clone repository: 'https://github.com/glfw/glfw.git'
+
+
+FAILED: glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download /home/saif/Desktop/OpenGL_Project/libs/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download 
+cd /home/saif/Desktop/OpenGL_Project/libs && /opt/clion-2024.2.3/bin/cmake/linux/x64/bin/cmake -P /home/saif/Desktop/OpenGL_Project/libs/glfw-subbuild/glfw-populate-prefix/tmp/glfw-populate-gitclone.cmake && /opt/clion-2024.2.3/bin/cmake/linux/x64/bin/cmake -E touch /home/saif/Desktop/OpenGL_Project/libs/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download
+ninja: build stopped: subcommand failed.
+
+CMake Error at /opt/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/FetchContent.cmake:1714 (message):
+  Build step for glfw failed: 1
+Call Stack (most recent call first):
+  /opt/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/FetchContent.cmake:1854:EVAL:2 (__FetchContent_directPopulate)
+  /opt/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/FetchContent.cmake:1854 (cmake_language)
+  /opt/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/FetchContent.cmake:2081 (FetchContent_Populate)
+  CMakeLists.txt:20 (FetchContent_MakeAvailable)
+
+
+-- Configuring incomplete, errors occurred!

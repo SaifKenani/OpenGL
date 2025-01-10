@@ -8,6 +8,11 @@ configure_file(
         /home/saif/CLionProjects/bonus/lib/root_directory.h.in
         /home/saif/CLionProjects/bonus/lib/root_directory.h
 )
+
+
+
+
+
 add_executable(OpenGL_Project src/main.cpp
         src/glad.c
         src/EBO.cpp
